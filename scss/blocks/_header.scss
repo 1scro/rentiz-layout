@@ -1,0 +1,45 @@
+.header {
+  padding: clamp(1.25rem, 0.886rem + 1.82vw, 2.5rem) 0;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  &__logo {
+    max-width: 200px;
+    svg {
+      max-width: 200px;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    gap: clamp(1.25rem, -2.799rem + 8.44vw, 4.688rem);
+  }
+
+  &__menu {
+    display: inline-block;
+  }
+
+  &__buttons {
+    display: flex;
+    column-gap: 5px;
+  }
+
+  &__btn {
+    padding: 11px 20px;
+    color: #fff;
+    border: 2px solid $active-color;
+    background-color: transparent;
+    transition: background-color 0.2s;
+    cursor: pointer;
+
+    @media (max-width: 576px) {
+      padding: 7px 15px;
+    }
+  }
+}

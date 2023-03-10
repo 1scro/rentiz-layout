@@ -1,0 +1,21 @@
+.swiper {
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: inline-flex;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  @media (max-width: 1800px) {
+    top: -100px;
+    right: 0;
+    width: auto;
+    gap: 30px;
+  }
+}

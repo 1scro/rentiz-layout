@@ -1,0 +1,45 @@
+.button {
+  display: inline-block;
+  height: 72px;
+  padding-left: 42px;
+	padding-right: 42px;
+  background-color: $active-color;
+  
+  line-height: 19px;
+  color: #FFFFFF;
+  font-weight: 500;
+
+  &--login {
+    height: 41px;
+    padding: 11px 29px;
+    border: 1px solid #1AA090;
+    background-color: $bg-color;
+    transition: background-color 0.2s, border 0.2s;
+    cursor: pointer;
+
+    @media (any-hover: hover) {
+      &:hover {
+        border: 1px solid transparent;
+        background-color: $active-color;
+      }
+    }
+
+    @media (max-width: 440px) {
+      display: none;
+    }
+  }
+
+  &--register {
+    height: 41px;
+    padding: 10px 19px;
+    border: 1px solid $active-color;
+    transition: background-color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+    @media (any-hover: hover) {
+      &:hover {
+        border-color: #1AA090;
+        background-color: transparent;
+      }
+    }
+  }
+}

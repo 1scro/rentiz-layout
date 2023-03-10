@@ -1,0 +1,21 @@
+// Base
+@import "./base/vars.scss";
+@import "./base/reset.scss";
+@import "./base/base.scss";
+
+// Blocks
+@import "./blocks/header";
+@import "./blocks/menu";
+@import "./blocks/button";
+@import "./blocks/burger";
+@import "./blocks/hero";
+@import "./blocks/filter";
+@import "./blocks/block-filter";
+@import "./blocks/featured";
+@import "./blocks/popular";
+@import "./blocks/swiper";
+@import "./blocks/why";
+@import "./blocks/reviews";
+@import "./blocks/gallery";
+@import "./blocks/begin";
+@import "./blocks/footer";

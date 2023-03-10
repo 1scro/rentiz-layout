@@ -1,0 +1,54 @@
+.gallery {
+  background: linear-gradient(
+    270deg,
+    #1a242f 0.01%,
+    rgba(26, 36, 47, 0) 82.97%
+  );
+  padding: clamp(1.875rem, -0.489rem + 11.82vw, 10rem) 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 63px;
+    @media (max-width: 892px) {
+      flex-direction: column;
+    }
+  }
+
+  &__box {
+    max-width: 400px;
+    @media (max-width: 720px) {
+      width: 60%;
+    }
+  }
+
+  &__item {
+    .swiper-wrapper {
+      position: relative;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    max-width: 520px;
+    @media (max-width: 475px) {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    @media (min-width: 992px) {
+      max-width: 520px;
+    }
+  }
+
+  &__text {
+    margin-top: 22px;
+  }
+}

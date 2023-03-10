@@ -1,0 +1,114 @@
+.footer {
+  padding-top: clamp(1.875rem, -0.125rem + 10vw, 8.75rem);
+  background-color: #1a242f;
+
+  &__main {
+    padding-bottom: clamp(1.875rem, 0.784rem + 5.45vw, 5.625rem);
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: clamp(1.875rem, -14.494rem + 26.19vw, 8.75rem);
+      @media (max-width: 992px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+
+  &__block {
+    @media (max-width: 992px) {
+      grid-column: 1/5;
+      &:not(:first-child) {
+        grid-row: 2/3;
+        grid-column: auto;
+      }
+    }
+  }
+
+  &__text {
+    margin: 22px 0 32px;
+    @media (min-width: 992px) {
+      width: 340px;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    @media (max-width: 600px) {
+      justify-content: center;
+    }
+  }
+
+  &__social {
+    text-decoration: none;
+    svg {
+      fill: #555e68;
+      transition: fill 0.2s;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    border-top: 1px solid #303a44;
+    padding: 15px 0;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .copyright-text {
+      text-align: left;
+    }
+
+    .copyright-design {
+      text-align: left;
+      @media (max-width: 365px) {
+        align-self: flex-start;
+      }
+    }
+
+    @media (max-width: 690px) {
+      flex-direction: column;
+      gap: 30px;
+      text-align: center;
+    }
+  }
+}
+
+.links-footer {
+  &__header {
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    margin-bottom: 11px;
+  }
+
+  &__link {
+    text-decoration: none;
+    transition: color 0.2s;
+    white-space: nowrap;
+    @media (any-hover: hover) {
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
